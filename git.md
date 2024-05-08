@@ -13,7 +13,7 @@ git 的缺点：
 
 ### git merge（合并） 和 git rebase（变基） 的区别
 
-git merge 和 git reabse 命令的宗旨都是将代码改动从一个分支合并到另外一个分支，但是二者的合并方式有很大的不同。
+git (冲突)merge 和 git reabse 命令的宗旨都是将代码改动从一个分支合并到另外一个分支，但是二者的合并方式有很大的不同。
 
 - merge:
 - rabese:
