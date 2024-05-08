@@ -15,8 +15,12 @@ git 的缺点：
 
 gitxxxx merge 和 git reabse 命令的宗旨都是将代码改动从一个分支合并到另外一个分支，但是二者的合并方式有很大的不同。
 
-- merge:
-- rabese:
+- merge: 使用 merge 方式合并代码 对现有分支是一种非破坏性的操作，现有分支不会有任何形式的更改，同时也避免了使用 rebase 的一些潜在缺陷。但是另一方面使用 merge 来从主分支跟新代码到 feature 时会产生一个额外的 merge commit。 如果主分支跟新非常活跃，可能会污染 feature 的 commit 记录
+
+- rabase:rebase 也叫变基，reabse 会修改现有分支的历史记录，如果使用 rebase 从 master 分支更新代码到 feature 分支， rebase 不会产生额外的 merge commit，但是会将整个 feature 分支的 commit 移动到 master 分支的顶端，reabse 会为 feature 的每个新的提交创建新的 commit 来重写 commit 历史记录
+
+git rebase 黄金法则
+git rebase 在工作中的常见用法
 
 git reabse 还可以用于整理我们的 commit
 
