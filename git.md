@@ -23,3 +23,6 @@ gitxxxx merge 和 git reabse 命令的宗旨都是将代码改动从一个分支
 - git fetch: 将远程主机的最新内容拉到本地 不会自动合并
 - git pull: 将远程主机的最新内容拉下来后直接合并 即：git pull = git fetch + git merge
   用法 git pull --rebase origin main , git pull origin main 用来从主分支更新代码到版本分支
+
+git fetch 拉取更新后会直接返回一个 FETCH_HEAD 指向的是某个 branch 在远程主机的最新状态，
+使用 git log -p FETCH_HEAD 查看相关信息
