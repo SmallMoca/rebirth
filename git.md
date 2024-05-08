@@ -18,6 +18,8 @@ gitxxxx merge 和 git reabse 命令的宗旨都是将代码改动从一个分支
 - merge:
 - rabese:
 
+git reabse 还可以用于整理我们的 commit.
+
 ## git fetch 和 git pull 的区别
 
 - git fetch: 将远程主机的最新内容拉到本地 不会自动合并
