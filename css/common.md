@@ -6,8 +6,8 @@ flex 布局属性
 **容器属性**
 `felx-direction`: 决定主轴的方向，默认值 row ，可设 column | column-reverse | row | row-reverse
 `flex-wrap`: 决定轴线排不下是否换行 默认值 nowrap ,可设 nowrap | wrap | wrap-reverse
-`justify-content`:
-align-items:
+`justify-content`: 决定主轴的对其方式
+align-items: 决定交叉轴的对齐方式
 align-content:
 
 **项目属性**
