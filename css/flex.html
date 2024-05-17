@@ -6,23 +6,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>flex</title>
   <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
     .box {
       width: 300px;
       height: 300px;
       border: 1px solid blue;
-      display: flex;
-      row-gap: 20px;
-      flex-wrap: wrap;
-      /* column-gap: 5%; */
-      align-content: space-between;
 
+    }
+
+    .wrap {
+      height: 100%;
+      /* 设置为flex 弹性盒子布局 */
+      display: flex;
+      /* 定义交叉轴对其方式 */
+      align-content: space-evenly;
+      /* 定义flex布局是否允许换行 */
+      flex-wrap: wrap;
+      /* 定义主轴对其方式 */
+      justify-content: space-evenly;
+      /* 定义flex 布局 主轴的方向 默认 row 行，可选 row-reserve column column-reserve */
+      /* flex-direction: row; */
+      /* flex-flow flex-direction 和 flex-wrap的简写 */
+      /* flex-flow: wrap; */
     }
 
     .item {
       padding: 0;
       margin: 0;
       background: orange;
-      height: 50px;
+      height: 30px;
+      /* 定义flex 项目在主轴方向上的初始化大小 */
       flex-basis: 40%;
       /* flex: 1;
       flex-grow: 0;
@@ -33,12 +50,14 @@
 
 <body>
   <div class="box">
-    <span class="item">1</span>
-    <span class="item">2</span>
-    <span class="item">3</span>
-    <span class="item">4</span>
-    <span class="item">5</span>
-    <span class="item">6</span>
+    <div class="wrap">
+      <span class="item">1</span>
+      <span class="item">2</span>
+      <span class="item">3</span>
+      <span class="item">4</span>
+      <span class="item">5</span>
+      <span class="item">6</span>
+    </div>
   </div>
 </body>
 
