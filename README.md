@@ -1,5 +1,3 @@
 # rebirth
 
-rebirthrebirth
-
-ddfdf
+面试资料
