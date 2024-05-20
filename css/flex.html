@@ -20,18 +20,12 @@
 
     .wrap {
       height: 100%;
-      /* 设置为flex 弹性盒子布局 */
       display: flex;
-      /* 定义交叉轴对其方式 */
-      align-content: space-evenly;
-      /* 定义flex布局是否允许换行 */
-      flex-wrap: wrap;
-      /* 定义主轴对其方式 */
-      justify-content: space-evenly;
-      /* 定义flex 布局 主轴的方向 默认 row 行，可选 row-reserve column column-reserve */
-      /* flex-direction: row; */
-      /* flex-flow flex-direction 和 flex-wrap的简写 */
-      /* flex-flow: wrap; */
+      /* align-content: space-evenly;
+      justify-content: space-evenly; */
+      flex-flow: row wrap;
+      row-gap: 20px;
+      column-gap: 8px;
     }
 
     .item {
@@ -40,10 +34,75 @@
       background: orange;
       height: 30px;
       /* 定义flex 项目在主轴方向上的初始化大小 */
-      flex-basis: 40%;
+      /* flex-basis: 30%; */
       /* flex: 1;
       flex-grow: 0;
       flex-flow: 0; */
+    }
+
+    .item1 {
+      flex-grow: 3;
+    }
+
+    .gird-wrap {
+      width: 300px;
+      height: 300px;
+      border: 1px solid blue;
+    }
+
+    .gird-box {
+      padding: 16px;
+      box-sizing: border-box;
+      height: 100%;
+      width: 100%;
+      display: grid;
+      /* grid-template-columns: repeat(auto-fill, 50px); */
+      /* grid-template-columns: repeat(2, auto); */
+      grid-template-columns: 1fr 1fr 1fr;
+      /* grid-gap: 16px; */
+      row-gap: 32px;
+      column-gap: 16px;
+    }
+
+    .gird-item {
+      background: green;
+
+    }
+
+    .gird-areas-wrap {
+      width: 300px;
+      height: 300px;
+      border: 1px solid blue;
+    }
+
+    .gird-areas-box {
+      height: 100%;
+      width: 100%;
+      display: grid;
+      grid-template-areas: "one one two two"
+        "one one two two"
+        ". . four four"
+        "three three four four";
+    }
+
+    .one {
+      background: orangered;
+      grid-area: one;
+    }
+
+    .two {
+      background: green;
+      grid-area: two;
+    }
+
+    .three {
+      background: blueviolet;
+      grid-area: three;
+    }
+
+    .four {
+      background: cadetblue;
+      grid-area: four;
     }
   </style>
 </head>
@@ -51,14 +110,43 @@
 <body>
   <div class="box">
     <div class="wrap">
-      <span class="item">1</span>
-      <span class="item">2</span>
-      <span class="item">3</span>
+      <span class="item item1">1</span>
+      <span class="item item2">2</span>
+      <span class="item item3">3</span>
       <span class="item">4</span>
       <span class="item">5</span>
       <span class="item">6</span>
     </div>
   </div>
+
+  <div>
+    <h2>gird 网格布局</h2>
+  </div>
+
+  <div class="gird-wrap">
+    <div class="gird-box">
+      <p class="gird-item">1</p>
+      <p class="gird-item">2</p>
+      <p class="gird-item">3</p>
+      <p class="gird-item">4</p>
+      <p class="gird-item">5</p>
+      <p class="gird-item">6</p>
+    </div>
+  </div>
+  <div>
+    <h2>gird areas</h2>
+  </div>
+  <div class="gird-areas-wrap">
+    <div class="gird-areas-box">
+      <div class="one">one</div>
+      <div class="two">two</div>
+      <div class="three">three</div>
+      <div class="four">four</div>
+    </div>
+  </div>
+
+
+
 </body>
 
 </html>
