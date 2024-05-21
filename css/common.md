@@ -23,4 +23,34 @@ flex: flex 属性是 flex-basic 、flex-grow flex-shrink 的简写，flex:1,代�
 
 常用属性：
 
-## gird 网格布局
+## grid 网格布局
+
+display:grid; 指定一个容器采用网格布局
+
+```css
+display: grid;
+grid-template-columns: 100px 100px 100px;
+grid-template-rows: 100px 100px 100px;
+/* 也可以简写为 */
+grid-template-columns: repeat(3, 100px);
+```
+
+## css 盒模型
+
+css 用来描述在浏览器渲染引擎渲染一个文档时，将元素比作一个个矩形盒子。css 盒模型分为两种：标准盒模型 和 怪异盒模型；
+在标准模型中 `盒子总宽度 = width + padding + margin = border`,谷歌浏览器中默认就是标准盒模型
+在怪异盒子模型中 `盒子总宽度 = width + margin`，通过 css `box-sizing:border-box;`设置盒子为怪异盒子模型
+
+## css 中的选择
+
+id 选择器 类名选择器 标签选择器 后代选择器 子级 伪类选择器 属性选择器等
+样式生效权重 `！important > 内联样式 > id选择 > 类名选择 > 标签选择器`
+
+## css 中的单位有哪些；
+
+- px:像素单位
+- rem：相对单位 相对于根字体大小
+- vw\vh：相对单位 ，相对于窗口宽高比
+- 百分比（%）:相对于父容器
+
+## 设备像素 css 像素、设备独立像素、dpr、dpi 之间的区别

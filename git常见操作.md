@@ -32,4 +32,8 @@ git reset --hard HEAD^ # --hard 危险的 会将工作目录 和暂存区的所�
 git remote
 # 查看远程仓库 更详细信息
 git remote
+# 查看所有分支的信息 包括本地分支和远程分支
+git branch -a -v
+# 查看远程分支的信息
+git branch -r -v
 ```
