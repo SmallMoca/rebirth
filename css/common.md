@@ -64,6 +64,12 @@ id 选择器 类名选择器 标签选择器 后代选择器 子级 伪类选择
 
 **移动端 1px 方案**
 
+**视口 viewport**
+
+- layout viewport: 布局视口
+- visual viewport: 视觉视口
+- ideal viewport: 理想视口
+
 **移动端设配方案**
 
 - rem 方案
