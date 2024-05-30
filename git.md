@@ -33,6 +33,8 @@ git reabse 还可以用于整理我们的 commit
 git fetch 拉取更新后会直接返回一个 FETCH_HEAD 指向的是某个 branch 在远程主机的最新状态，
 使用 git log -p FETCH_HEAD 查看相关信息
 
+> GIT 飞行法则 https://github.com/k88hudson/git-flight-rules/blob/master/README_zh-CN.md
+
 ## 常见题
 
 ### 解释下 Git 是什么，以及它的核心优势是什么？
