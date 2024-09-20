@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test html</title>
+  <style>
+    .box {
+      width: 500px;
+      border: 2px solid red;
+      height: 500px;
+
+    }
+
+    .flex-wrap {
+      display: flex;
+      /* flex-wrap: wrap; */
+      flex-flow: row wrap;
+      /* align-items: center; */
+      align-content: space-evenly;
+      justify-content: space-evenly;
+    }
+
+    .flex-item {
+      /* width: 200px; */
+      flex-basis: 200px;
+      height: 100px;
+      align-self: stretch;
+      box-sizing: border-box;
+      border: 2px solid rgb(14, 221, 135);
+    }
+
+    .flex-item:nth-child(1) {
+      flex-grow: 1;
+      /* align-self: center; */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="flex-wrap box">
+    <div class="flex-item ">1</div>
+    <div class="flex-item ">2</div>
+    <div class="flex-item">3</div>
+    <div class="flex-item">4</div>
+    <div class="flex-item">5</div>
+    <div class="flex-item">6</div>
+
+  </div>
+</body>
+
+</html>

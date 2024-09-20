@@ -2,7 +2,7 @@
 
 ## flex 布局
 
-`display:flex` 弹性盒子布局。
+`display:flex` 弹性盒子布局
 
 flex 布局属性
 **容器属性**
@@ -16,7 +16,7 @@ flex 布局属性
 **项目属性**
 order: 配置项目的排列顺序
 flex-grow: 定义了项目的放大比例，默认值为：0 ，也就是说如果存在剩余空间 也不会放大
-flex-shrink: 定义了项目缩小比例，吗，默认值为：1，也就是说如果空间不足，该项目将缩小
+flex-shrink: 定义了项目缩小比例，默认值为：1，也就是说如果空间不足，该项目将缩小
 flex-basis: 定义了在分配多余空间之前，项目占据的主轴空间，默认值：auto，既项目本来大小
 align-self: 配置单元格内容的垂直对齐方式。默认值：auto。可设置的值：start | end | center | stretch。
 flex: flex 属性是 flex-basic 、flex-grow flex-shrink 的简写，flex:1,代表设置 felx-basic:auto;flex-shrink:1; flex-grow:1;

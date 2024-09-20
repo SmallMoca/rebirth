@@ -1,0 +1,1 @@
+(()=>{const o=new Map;o.set("foo",1),console.log(o.get("foo"))})();
